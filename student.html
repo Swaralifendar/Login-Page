@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Enter Student details</h1>
+        <form action="student.html" method="GET">
+
+            <!--Student Name-->
+            <div class="form-group">
+                <label for="student_name">Student Name</label>
+                <input type="text" id="student_name" name="student_name" placeholder="Enter your name" pattern="[A-Za-z\s]+" required>
+            </div>
+
+            <!--Roll Number-->
+            <div class="form-group">
+                <label for="roll_number">Roll Number</label>
+                <input type="text" id="roll_number" name="roll_number" placeholder="Enter your name" pattern="[A-Za-z0-9]+$" required>
+            </div>
+
+            <!--CGPA-->
+            <div class="form-group">
+                <label for="cgpa">CGPA</label>
+                <input type="text" id="cgpa" name="cgpa" placeholder="Enter your CGPA(0 to 10)" pattern="^([0-9](\.\d{1,2})?|10(\.0{1,2})?)$" required>
+            </div>
+
+            <!--CGPA-->
+            <div class="form-group">
+                <lbel for="semester1">Semester 1 CGPA</lbel>
+                <input type="number" id="semester1" name="semester1" step="0.01" min="0"
+                max="10" placeholder="Enter CGPA for Semester 1" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
